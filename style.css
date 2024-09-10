@@ -1,0 +1,90 @@
+
+body, html {
+  padding: 0;
+  font-family: "Dela Gothic One", sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin :0px
+}
+
+.player-choice {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+
+
+.gamepad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #CED3DC;
+  box-shadow: 10px 10px   #232931;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4E8098;
+  border-radius: 20px;
+  max-width: fit-content;
+}
+
+img{
+  max-width: 100px;
+  border-radius: 80%;
+}
+
+.header {
+  display: block;
+  width: 100%;
+  height :auto;
+  text-align: center;
+}
+
+h1{
+  margin: 30px; 
+  text-shadow: 5px 0   #232931;
+  text-align: center;
+  color: #A31621;
+  -webkit-text-stroke: 1.5px rgb(237, 238, 243);
+}
+
+h2{
+  color: #A31621;
+  -webkit-text-stroke: 0.5px rgb(237, 238, 243);
+  
+}
+
+h3{
+  height: 20px;
+}
+
+button:hover{
+  background-color : #4E8098;
+}
+
+
+button{
+  border-radius: 80%;
+  padding : 20px;
+  border : none;
+  margin: 20px;
+  font-family: "Dela Gothic One", sans-serif;
+  box-shadow: 10px 10px   #232931;
+}
+
+
+#reset-btn {
+  margin-top: 30px;
+  font-size:3rem ;
+  box-shadow: 10px 10px   #232931;
+}
+
+@media (max-width : 600px) {
+  header {
+     font-size: 16px;
+     padding:10px;
+  }
+}
