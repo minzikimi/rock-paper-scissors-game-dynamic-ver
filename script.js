@@ -3,21 +3,18 @@ const playerText = document.querySelector("#playerChoice h3")
 const computerText = document.querySelector("#computerChoice h3")
 const playerScoreDisplay = document.querySelector("#playerScore h3")
 const computerScoreDisplay = document.querySelector("#computerScore h3")
-
 const choiceBtns = document.querySelectorAll(".btn")
-
 const resetBtn = document.querySelector("#reset-btn")
 
 let player;
 let computer;
-
 
 choiceBtns.forEach(button => { button.addEventListener("click", () => {
 
   player = button.textContent.toUpperCase();
   getComputerChoice();
 
-  playerText.textContent = `You Choose : ${player}`;
+  playerText.textContent = `You choose : ${player}`;
   computerText.textContent = `The Computer choose : ${computer}`;
 
   checkScore();
@@ -29,8 +26,6 @@ choiceBtns.forEach(button => { button.addEventListener("click", () => {
 /* computer choice for rock, paper and scissor */
 function getComputerChoice () {
   const ranNum = Math.floor(Math.random()*3)+1;
-  
-
   switch (ranNum){
     case 1 : 
       computer = "ROCK";
@@ -42,15 +37,10 @@ function getComputerChoice () {
       computer = "SCISSORS";
       break;
   }
-  
 }
-
-
 
 let playerScore = 0;
 let computerScore =0;
-
-
 
 
 function checkScore(){
@@ -71,13 +61,10 @@ function checkScore(){
   }
 }
 
-
 function updateScoreDisplay(){
   playerScoreDisplay.textContent = `Player Score : ${playerScore}`;
   computerScoreDisplay.textContent = `Computer Score : ${computerScore}`;
 }
-
-
 
 resetBtn.addEventListener("click", () => {
   playerScore = 0;
